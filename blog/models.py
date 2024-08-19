@@ -1,7 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
 from utils.rands import slugify_new
-from utils.images import resize_image
+from utils.image import resize_image
 
 # Create your models here.
 class Tag(models.Model):
