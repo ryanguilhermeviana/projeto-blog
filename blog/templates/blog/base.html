@@ -2,7 +2,10 @@
 <html lang="pt-br">
 <head>
     {% include "blog/partials/_head.html" %}
+
+    {% block additional_head %}{% endblock additional_head %}
 </head>
+
 <body>
   <div class="blog-wrapper">
     {% if site_setup.show_header %}
