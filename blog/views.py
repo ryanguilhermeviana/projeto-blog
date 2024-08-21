@@ -150,7 +150,7 @@ class PageDetailView(DetailView):
 
     def get_queryset(self):
         return super().get_queryset().filter(is_published=True)
-
+ 
 def post(request, slug):
     post_obj = (
         Post.objects.get_published()
